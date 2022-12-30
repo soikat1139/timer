@@ -55,3 +55,12 @@ const timer=new Timer(durationInput,startButton,pauseButton,{
 
     }
 });
+
+let timeout;
+
+durationInput.addEventListener("input", function() {
+  clearTimeout(timeout);
+  timeout = setTimeout(()=>{
+    location.reload();
+  }, 1000);
+});
