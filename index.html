@@ -5,33 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="./app.css">
+    
 </head>
 <body>
-
-
-    <svg height="400" width="250">
-       <circle r="80" cx="120" cy="120"
-        fill="transparent"
-        stroke="blue"
-        stroke-width="8"
-        stroke-dasharray="10 5"
-       
-       />
-
-    </svg>
+    <div class="timer">
+        <div class="controls">
+            <input id="duration" value="3" />
+    <div>
+        <button id="start"><i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause">
+            <i class="fa-solid fa-pause"></i>
+        </button>
+    </div>
     
-    <input type="number" id="duration"/>
+        </div>
+
+
+   
     
-    <button id="start">Start</button>
-    <button id="pause">pause</button>
-     </div>
+    
+    <svg class="dial" height="400" width="400">
+        <circle r="140" cx="10" cy="150"
+         fill="transparent"
+         stroke="blue"
+         stroke-width="8"
+         
+         transform="rotate(-90 100 100)"
+        />
+ 
+     </svg>
 
 
 
 
 
-
+    </div>
 
 
 
